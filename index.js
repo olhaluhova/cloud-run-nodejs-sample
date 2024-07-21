@@ -2,7 +2,7 @@ import express from 'express';
 const app = express();
 
 app.get('/', (req, res) => {
-  const name = process.env.NAME || 'Google Cloud Serverless community';
+  const name = process.env.NAME || 'Google Cloud Serverless community! Its a revision to the app after the index.js update.';
   res.send(`Hello ${name}! This is built using the code from my GitHub repo.`);
 });
 
